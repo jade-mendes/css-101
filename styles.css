@@ -1,0 +1,61 @@
+header{
+    width: 1440;
+    height: 109;
+    padding: 28px 30px 28px 30px;
+    background-color: #4c65c6;
+}
+
+body {
+    font-family: Alata;
+}
+
+p.description {
+    width: 614px;
+    height: 134.13px;
+    top: 117.86px;
+    left: 599px;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+footer{
+    width: 1440px;
+    height: 70px;
+    top: 1082px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    gap: 897px;
+    background-color: #4c65c6;
+}
+
+.feedback-input{
+    background-color: #94a6e9;
+}
+
+#description {
+    background-color: #94a6e9;
+    width: 1440;
+    height: 318;
+    top: 109px;
+    gap: 125px;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+#description-text{
+    width: 614px;
+    height: 186px;
+}
+
+#profile-pic {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    object-fit: cover;
+}

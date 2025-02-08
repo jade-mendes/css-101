@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>Jade</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icons/flower-icon.svg">
 </head>
-<body style="text-align: center;">
+<body>
     <header>
-        <h2> 
-            <img src="./assets/icons/flower-icon.svg" width="30px" height="30px" style="object-fit: cover;">
-            Jade </h2>
-        <a href="index.html">voltar</a>
+        <h1>Jade</h1>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
     </header>
 
     <main>
-        <img src="./assets/profile-pics/jade-photo-dithered.png" width="250px" style="margin: 1%;">
-        <section class="Description">
-        <p> Sou uma pessoa criativa e introspectiva, que procura beleza tanto nas pequenas coisas <br>
-            quanto nas grandes transformações da vida. Aprecio a tranquilidade, a liberdade e a <br>
-            expressão artística, mesmo que eu não seja muito boa em nenhuma dessas coisas. <br>
-            Tento equilibrar a instrospecção com momentos de conexão com o espaço ao meu redor, <br>
-            buscando sempre novas formas de compreender os outros e o mundo. </p>
-        </section>
+        
+        <div id="description">
+
+            <img id="profile-pic" src="./assets/jade-profile-pic.jpg" alt="foto da Jade sorrindo">
+
+            <div id="description-text">   
+                <h3>Sobre mim</h3>
+                <p> Sou uma pessoa criativa e introspectiva, que procura beleza tanto nas pequenas coisas
+                    quanto nas grandes transformações da vida. Aprecio a tranquilidade, a liberdade e a
+                    expressão artística, mesmo que eu não seja muito boa em nenhuma dessas coisas. 
+                    Tento equilibrar a instrospecção com momentos de conexão com o espaço ao meu redor,
+                    buscando sempre novas formas de compreender os outros e o mundo. </p>
+            </div>
+
+        </div>
+            
+
         <section>
-            <h3 style="display: block; margin: 0px">Hobbies</h3>
-            <ul style="display: inline-block; text-align: left;">
+            <h3>Hobbies</h3>
+            <ul>
                 <li> Ler</li>
                 <li> Andar de bicicleta</li>
                 <li> Cozinhar</li>
@@ -35,8 +48,8 @@
         </section>
         <br>
         <section>
-            <h3 style="display: block; margin: 0px">Top 5 Filmes Favoritos</h3>
-            <ol style="display: inline-block; text-align: center;">
+            <h3>Top 5 Filmes Favoritos</h3>
+            <ol>
                 <img src="./assets/films/waltermitty.jpg" width="100px" height="100px" style="object-fit: cover;">
                 <li> A Vida Secreta de Walter Mitty</li>
                 <img src="./assets/films/littlemisssunshine.webp" width="100px" height="100px" style="object-fit: cover;">
@@ -50,18 +63,14 @@
             </ol>
         </section>
 
-        <hr>
-
         <form>
             <h4> Feedback </h4>
-            <input type="text" placeholder="Nome completo" required> <br>
-            <textarea placeholder="Feedback" style="resize:none" rows="5" cols="33" required></textarea> <br>
+            <input class="feedback-input" type="text" placeholder="Digite seu nome aqui" required> <br>
+            <textarea class="feedback-input" placeholder="Dê um feedback para esse desenvolvedor" required></textarea> <br>
             <button type="submit"> Enviar </button>
         </form>
 
     </main>
-
-    <hr>
 
     <footer>
         <a href="https://github.com/jade-mendes" target="_blank"> GITHUB </a>
