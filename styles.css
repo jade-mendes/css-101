@@ -139,6 +139,27 @@ footer a:hover{
     list-style-type: none;
 }
 
+.lists li .badge{
+    width: 10px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    transform: translateX(-10%);
+}
+
 .lists li span{
     position: relative;
     z-index: 2;
