@@ -1,10 +1,17 @@
+:root{
+    --primary-color: #4c65c6;
+    --secondary-color: #94a6e9;
+    --accent-color: #dedcff;
+    --text-color: #000000;
+}
+
 header{
     height: 109px;
-    background-color: #4c65c6;
+    background-color: var(--primary-color);
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -20,7 +27,7 @@ header div {
 }
 
 header div a{
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 24px;
 }
@@ -31,21 +38,32 @@ body {
 
 footer{
     height: 70px;
-    top: 1082px;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    gap: 897px;
-    background-color: #4c65c6;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: var(--text-color);
+    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 6px 16px;
+}
+
+footer a:hover{
+    background-color: var(--accent-color);
 }
 
 .feedback-input{
-    background-color: #94a6e9;
+    background-color: var(--secondary-color);
 }
 
 .description {
-    background-color: #94a6e9;
+    background-color: var(--secondary-color);
     height: 318px;
     display: flex;
     flex-direction: row;
@@ -80,6 +98,44 @@ footer{
 
 } */
 
-.feedback{
+.feedback form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.feedback h4{
+    font-size: 24px;
+}
+
+.feedback input{
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 56px;
+    font-size: 16px;
+    font-family: Alata;
+}
+
+.feedback textarea{
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 56px;
+    resize: none;
+    font-size: 16px;
+    font-family: Alata;
+}
+
+.feedback button[type=submit]{
+    background-color: var(--secondary-color);
+    padding: 8px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: Alata;
+}
+
+.feedback button[type=submit]:hover{
+    background-color: var(--accent-color);
 }
