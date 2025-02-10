@@ -13,18 +13,18 @@
 <body>
     <header>
         <h1>Jade</h1>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <div class="header-links">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
     </header>
 
     <main>
         
-        <div id="description">
-
-            <img id="profile-pic" src="./assets/jade-profile-pic.jpg" alt="foto da Jade sorrindo">
-
-            <div id="description-text">   
+        <section class="description">
+            <img class="profile-pic" src="./assets/jade-profile-pic.jpg" alt="foto da Jade sorrindo">
+            <div class="description-text">   
                 <h3>Sobre mim</h3>
                 <p> Sou uma pessoa criativa e introspectiva, que procura beleza tanto nas pequenas coisas
                     quanto nas grandes transformações da vida. Aprecio a tranquilidade, a liberdade e a
@@ -32,51 +32,43 @@
                     Tento equilibrar a instrospecção com momentos de conexão com o espaço ao meu redor,
                     buscando sempre novas formas de compreender os outros e o mundo. </p>
             </div>
-
-        </div>
-            
-
-        <section>
-            <h3>Hobbies</h3>
-            <ul>
-                <li> Ler</li>
-                <li> Andar de bicicleta</li>
-                <li> Cozinhar</li>
-                <li> Desenhar</li>
-                <li> Assistir filmes</li>
-            </ul>
         </section>
-        <br>
-        <section>
-            <h3>Top 5 Filmes Favoritos</h3>
-            <ol>
-                <img src="./assets/films/waltermitty.jpg" width="100px" height="100px" style="object-fit: cover;">
-                <li> A Vida Secreta de Walter Mitty</li>
-                <img src="./assets/films/littlemisssunshine.webp" width="100px" height="100px" style="object-fit: cover;">
-                <li> Pequena Miss Sunshine</li>
-                <img src="./assets/films/carol.jpg" width="100px" height="100px" style="object-fit: cover;">
-                <li> Carol</li>
-                <img src="./assets/films/mononoke.png" width="100px" height="100px" style="object-fit: cover;">
-                <li> Princesa Mononoke</li>
-                <img src="./assets/films/abouttime.jpg" width="100px" height="100px" style="object-fit: cover;">
-                <li> Questão de Tempo</li>
-            </ol>
+        
+        <section class="lists">
+            <div class="hobbies">
+                    <h3>Hobbies</h3>
+                <ul>
+                    <li> Ler</li>
+                    <li> Andar de bicicleta</li>
+                    <li> Cozinhar</li>
+                    <li> Desenhar</li>
+                    <li> Assistir filmes</li>
+                </ul>
+            </div>
+            <div class="top-five">
+                    <h3>Top 5 Filmes Favoritos</h3>
+                <ol>
+                    <li> A Vida Secreta de Walter Mitty</li>
+                    <li> Pequena Miss Sunshine</li>
+                    <li> Carol</li>
+                    <li> Princesa Mononoke</li>
+                    <li> Questão de Tempo</li>
+                </ol>
+            </div>
         </section>
 
-        <form>
-            <h4> Feedback </h4>
-            <input class="feedback-input" type="text" placeholder="Digite seu nome aqui" required> <br>
-            <textarea class="feedback-input" placeholder="Dê um feedback para esse desenvolvedor" required></textarea> <br>
-            <button type="submit"> Enviar </button>
-        </form>
-
+        <section class="feedback">
+            <form>
+                <h4> Feedback </h4>
+                <input class="feedback-input" type="text" placeholder="Digite seu nome aqui" required> <br>
+                <textarea class="feedback-input" placeholder="Dê um feedback para esse desenvolvedor" required></textarea> <br>
+                <button type="submit"> Enviar </button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <a href="https://github.com/jade-mendes" target="_blank"> GITHUB </a>
-        <img src="./assets/icons/flower-icon.svg" width="20px">
-        <a href="index.html"> HOME </a> 
-        <img src="./assets/icons/flower-icon.svg" width="20px">
         <a href="jade-contact.html"> CONTATO </a>
     </footer>
     
