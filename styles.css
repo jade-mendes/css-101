@@ -11,7 +11,6 @@ header{
 header h1{
     display: flex;
     align-items: center;
-    gap: 10px;
     font-size: 40px;
 }
 
@@ -54,16 +53,9 @@ footer{
     justify-content: space-evenly;
 }
 
-.description-text{
-    width: 614px;
-    height: 186px;
-}
-
-p.description {
+.description p {
     width: 614px;
     height: 134.13px;
-    top: 117.86px;
-    left: 599px;
     font-size: 16px;
 }
 
@@ -77,16 +69,17 @@ p.description {
 .lists{
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
+/* 
+.hobbies{
 
-/* .hobbies{
+} */
 
-}
+/* .top-five{
 
-.top-five{
-
-}
+} */
 
 .feedback{
 
-} */
+}
