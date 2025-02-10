@@ -196,7 +196,7 @@ footer{
 .feedback form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .feedback h4{
@@ -205,7 +205,7 @@ footer{
 
 .feedback input{
     background-color: var(--secondary-color);
-    width: 70%;
+    width: 80%;
     height: 56px;
     font-size: 1rem;
     font-family: Alata;
@@ -214,7 +214,7 @@ footer{
 
 .feedback textarea{
     background-color: var(--secondary-color);
-    width: 70%;
+    width: 80%;
     height: 56px;
     resize: none;
     font-size: 1rem;
@@ -260,6 +260,11 @@ footer{
 
     .feedback form{
         align-items: center;
+        padding-left: 0;
+    }
+
+    .feedback{
+        margin-left: 20px;
     }
 
     .lists{
@@ -277,6 +282,7 @@ footer{
     .lists ul, .lists ol{
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0;
     }
 
     .lists li{
