@@ -21,7 +21,7 @@ header{
 header h1{
     display: flex;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 header div {
@@ -32,7 +32,7 @@ header div {
 header div a{
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 body {
@@ -51,7 +51,7 @@ footer{
 
 footer a {
     color: var(--text-color);
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: none;
     background-color: var(--secondary-color);
     border-radius: 4px;
@@ -78,7 +78,7 @@ footer a:hover{
 .description p {
     width: 614px;
     height: 134.13px;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .profile-pic {
@@ -131,14 +131,14 @@ footer a:hover{
 }
 
 .feedback h4{
-    font-size: 24px;
+    font-size: 1.5px;
 }
 
 .feedback input{
     background-color: var(--secondary-color);
     width: 70%;
     height: 56px;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: Alata;
     margin: 10px;
 }
@@ -148,7 +148,7 @@ footer a:hover{
     width: 70%;
     height: 56px;
     resize: none;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: Alata;
     margin: 10px;
 }
