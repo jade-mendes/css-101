@@ -75,12 +75,6 @@ footer a:hover{
     justify-content: space-evenly;
 }
 
-.description p {
-    width: 614px;
-    height: 134.13px;
-    font-size: 1rem;
-}
-
 .profile-pic {
     width: 247px;
     height: 247px;
@@ -88,11 +82,11 @@ footer a:hover{
     object-fit: cover;
 }
 
-@media screen and (max-width: 480px){
-    .description{
-        height: 584px;
-        flex-direction: column;
-    }
+.description-text {
+    max-width: 600px; 
+    width: 90%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 .lists{
@@ -103,6 +97,8 @@ footer a:hover{
     align-content: center;
     padding: 20px;
     gap: 20px;
+    position: relative;
+    z-index: 0;
 }
 
 .lists div{
@@ -112,16 +108,57 @@ footer a:hover{
     margin-top: 30px;
 }
 
+.lists div h3{
+    font-weight: 100px;
+}
+
 .lists ul, .lists ol{
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .lists li{
     display: flex;
     padding: 0;
     flex-direction: row;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 1;
+    width: 100px;
+    height: 150px;
+    border-radius: 4px;
+    list-style-type: none;
+}
 
+.lists li span{
+    position: relative;
+    z-index: 2;
+}
+
+.lists ol li span{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.lists li img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .feedback form{
@@ -131,7 +168,7 @@ footer a:hover{
 }
 
 .feedback h4{
-    font-size: 1.5px;
+    font-size: 1.5rem;
 }
 
 .feedback input{
@@ -168,7 +205,27 @@ footer a:hover{
     background-color: var(--accent-color);
 }
 
-@media screen and (max-width: 480px){
+/* Configuração para tablets */
+@media (max-width: 1024px) {
+    .profile-pic {
+        width: 210px;
+        height: 210px;
+        margin-right: 10px;
+    }
+}
+
+/* Configuração para smartphones */
+@media screen and (max-width: 600px) {
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .description{
+        height: 584px;
+        flex-direction: column;
+    }
+
     .feedback form{
         align-items: center;
     }
